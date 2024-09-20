@@ -23,4 +23,4 @@ Type 1-6 to choose your operator: 3
 Type second number: 10
 The result is: 50.0
 ```
-## Enjoy!
+Enjoy!

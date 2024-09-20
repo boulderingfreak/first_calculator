@@ -1,23 +1,24 @@
-# 1 +
-# 2 -
-# 3 *
-# 4 /
+import math
 
+print("Hi in my calculator :] jest zajebisty")
 
-print("Hi in my calculator.")
+num1 = float(input("Type first number: "))
+print(" 1 = + \n 2 = - \n 3 = * \n 4 = / \n 5 = to 2nd power \n 6 = square root")
+op = int(input("Type 1-6 to choose your operator: "))
 
-num1 = float(input("Type first number:"))
-print(" 1 = + \n 2 = - \n 3 = * \n 4 = /")
-op = int(input("Type 1-4 to choose your operator: "))
-num2 = float(input("Type second number :"))
-
-if op == 1:
-    print(f"The result is: {num1+num2}")
-elif op == 2:
-     print(f"The result is: {num1-num2}")
-elif op == 3:
-     print(f"The result is: {num1*num2}")
-elif op == 4:
-     print(f"The result is: {num1/num2}")
+if op == 5:
+     print(f"The result is: {pow(num1, 2)}")
+elif op == 6:
+     print(f"The result is: {math.sqrt(num1)}")
+else:
+     num2 = float(input("Type second number: 5"))
+     if op == 1:
+          print(f"The result is: {num1+num2}")
+     elif op == 2:
+          print(f"The result is: {num1-num2}")
+     elif op == 3:
+          print(f"The result is: {num1*num2}")
+     elif op == 4:
+          print(f"The result is: {num1/num2}")
 
 
